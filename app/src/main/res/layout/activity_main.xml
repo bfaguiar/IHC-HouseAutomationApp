@@ -12,8 +12,8 @@
     <EditText
         android:id="@+id/password_login"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="36dp"
         android:layout_marginEnd="43dp"
         android:layout_marginStart="43dp"
         android:contentDescription="Password"
@@ -26,10 +26,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="151dp"
+        android:layout_width="103dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="89dp"
-        android:layout_marginTop="95dp"
+        android:layout_marginBottom="65dp"
+        android:layout_marginTop="78dp"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,11 +41,10 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="34dp"
         android:text="Login"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_login" />
 
@@ -53,22 +52,18 @@
         android:id="@+id/button4"
         style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="0dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="3dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginStart="1dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/ripple_effect"
         android:text="Create Account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="51dp"
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="41dp"
         android:layout_marginStart="41dp"
@@ -86,15 +81,15 @@
     <Button
         android:id="@+id/button3"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="46dp"
-        android:layout_marginEnd="140dp"
+        android:layout_width="131dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="41dp"
         android:text="Forgot Password"
         android:textAllCaps="false"
         android:textColor="#8c8c8c"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_login" />
 
 </android.support.constraint.ConstraintLayout>
