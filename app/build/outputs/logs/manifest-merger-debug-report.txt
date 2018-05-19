@@ -1,13 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c361088aaf40962330b3b82ab6086b99\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d54ddee39d1961b761beab879df86971\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ece094dcd6e31730979d70ccd669dc21\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\0fa60b1589040d14e72644691e6ccb48\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\7941b4c37925926ab675330cd8c4538c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\be395307861b74a034ccb97586d34d32\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\e6647a1ef9282b41d6cd8d9832053808\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\80e91d801ca800944e937a3acfeb5c4a\AndroidManifest.xml:17:1-22:12
@@ -21,20 +22,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Bruno\.gradle\
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\4c667f16d46eb7fa6ab914a94aa3f5ec\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cf3b9e53324f6cda29536167b568383d\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ddb1233d84608a2ede650ecb9bce754b\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:2:11-69
@@ -43,13 +44,13 @@ ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\And
 	android:largeScreens
 		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:6:9-36
 	android:smallScreens
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:7:9-36
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:8:9-36
 	android:normalScreens
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:8:9-37
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:7:9-37
 	android:xlargeScreens
 		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:9:9-37
 application
-ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:11:5-33:19
+ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:11:5-41:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ece094dcd6e31730979d70ccd669dc21\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ece094dcd6e31730979d70ccd669dc21\AndroidManifest.xml:9:5-20
 	android:supportsRtl
@@ -59,37 +60,53 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Br
 	android:roundIcon
 		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:13:9-54
 	android:allowBackup
 		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
 		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:17:9-40
-activity#com.example.bruno.myapplication.MainActivity
-ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:18:9-24:20
+activity#com.ihc.project.HouseAutomation.MainActivity
+ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:18:9-26:20
+	android:screenOrientation
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:20:13-49
 	android:name
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:18:19-47
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:24:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:26:9-28:57
+ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:28:9-30:57
 	android:resource
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:28:13-54
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:30:13-54
 	android:name
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:27:13-43
-activity#com.example.bruno.myapplication.HomeActivity
-ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:30:9-32:68
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:29:13-43
+activity#com.ihc.project.HouseAutomation.forgotPasswordActivity
+ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:32:9-35:47
 	android:label
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:32:13-56
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:34:13-67
+	android:theme
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:35:13-44
 	android:name
-		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:31:13-41
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:33:13-51
+activity#com.ihc.project.HouseAutomation.DrawerHomeActivity
+ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:36:9-39:67
+	android:label
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:38:13-63
+	android:theme
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:39:13-64
+	android:name
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:37:13-47
+activity#com.ihc.project.HouseAutomation.CreateAccActivity
+ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:40:9-64
+	android:name
+		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:40:19-52
 uses-sdk
 INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml
@@ -102,6 +119,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Br
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ece094dcd6e31730979d70ccd669dc21\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\0fa60b1589040d14e72644691e6ccb48\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\0fa60b1589040d14e72644691e6ccb48\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\7941b4c37925926ab675330cd8c4538c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\7941b4c37925926ab675330cd8c4538c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\be395307861b74a034ccb97586d34d32\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\be395307861b74a034ccb97586d34d32\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\e6647a1ef9282b41d6cd8d9832053808\AndroidManifest.xml:20:5-44

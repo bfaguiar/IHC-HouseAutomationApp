@@ -1,8 +1,54 @@
 <resources>
     <string name="app_name">House Automation</string>
+
+    <!--  bottom navigation bar -->
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Divisions</string>
-    <string name="title_notifications">Devices</string>
-    <string name = "title_chat"> Chat </string>
+    <string name="title_divisions">Divisions</string>
+    <string name="title_devices">Devices</string>
+    <string name="title_log"> Change log </string>
+    <!-- ######################################### -->
+
+    <string name="title_activity_forgot_password">forgotPasswordActivity</string>
+
+    <string name="err_msg_email">E-mail inválido, insira outra vez</string>
+    <string name="title_activity_drawer_home">DrawerHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="HouseStats">House stats</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Modes">Mood</string>
+
+    <string name="device_cat"></string>
+    <string-array name="device_cat_items">
+        <item>Choose a device type...</item>
+        <item>Smart Plugin</item>
+        <item>Smoke Detector</item>
+        <item>Light</item>
+        <item>Air Conditioner</item>
+        <item>Security Cameras</item>
+        <item>Thermostat</item>
+        <item>Smart Door</item>
+        <item>Appliances</item>
+    </string-array>
+
+    <string-array name="divisions_cat_items">
+        <item>Choose a division type...</item>
+        <item>Livin Room</item>
+        <item>Bed Room</item>
+        <item>Kitchen</item>
+        <item>Hall</item>
+        <item>Dinner Room</item>
+        <item>Cave</item>
+    </string-array>
+
+
 </resources>

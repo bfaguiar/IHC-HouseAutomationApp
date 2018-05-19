@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#385760</color>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDar2">#1363b2</color>
     <color name="colorPrimaryDark">#F8F8F8</color>
     <color name="colorAccent">  #1976D2</color>
     <color name="colornavegationBarLogin"> #F8F8F8 </color>
     <color name="colorBackgnrd">#FFFFFF</color>
+    <color name="toolbarIcons">#F8F8F8</color>
+    <color name = "fragmentColor">#f4f4f4 </color>
 </resources>
