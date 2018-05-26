@@ -45,17 +45,27 @@ import java.util.ArrayList;
 public class DevicesFragment extends Fragment  {
 
     FloatingActionButton addDevice;
+
+   /*
     EditText nameDevice;
     EditText nameDivision;
     Switch   switchOnOffDevice;
     Spinner  spTipoDevice;
     Spinner  spTipoDivision;
     Device   device;
+
+    */
+
+     DataCommunicationHome mCallback;
+
+
     CardView smartPlugins, smokeDetectors, smartLights, airConditioners, securityCameras, thermostats, electronis, appliances;
     ImageView smartPluginsIMG, smokeDetectorsIMG, smartLightsIMG, airConditionersIMG, securityCamerasIMG, thermostatsIMG, electronisIMG, appliancesIMG;
     static ArrayList<Device> devices = new ArrayList<>();
 
-    DataCommunicationHome mCallback;
+
+
+
 
     public DevicesFragment() {
 
@@ -151,85 +161,11 @@ public class DevicesFragment extends Fragment  {
 
 
 
-        /************************** FLOATING BUTTON **************************************************/
-
-        addDevice = view.findViewById(R.id.add_device_buttom);
-        addDevice.setOnClickListener( new Button.OnClickListener() {
-            @Override public void onClick(View view) {
-
-                AlertDialog.Builder mBuilder = new AlertDialog.Builder(getContext());
-                final View viewDialog   = getLayoutInflater().inflate(R.layout.dialog_add_device, null);
-
-                nameDevice        = (EditText) viewDialog.findViewById(R.id.name_device);
-                switchOnOffDevice = (Switch)   viewDialog.findViewById(R.id.switch_dialog);
-                nameDivision      = (EditText) viewDialog.findViewById(R.id.name_division);
-                //###########################  Spinner categorias devices #######################################
-                spTipoDevice      = (Spinner) viewDialog.findViewById(R.id.spinnerTipoDevice);
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.device_cat_items));
-                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                spTipoDevice.setAdapter(adapter);
-
-                //###########################  Spinner categorias Divisions #######################################
-                spTipoDivision      = (Spinner) viewDialog.findViewById(R.id.spinnerDivisao);
-                ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.divisions_cat_items));
-                adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                spTipoDivision.setAdapter(adapter2);
-
-                // ################################## BUTTONS ########################################################
-
-                mBuilder.setPositiveButton("CREATE", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int which) {
-
-                                String deviceSTR = nameDevice.getText().toString();
-                                String divisionSTR = nameDivision.getText().toString();
-                                String deviceCat = spTipoDevice.getSelectedItem().toString();
-                                String divisionCat = spTipoDivision.getSelectedItem().toString();
-
-                                int onoff;
-                                if (switchOnOffDevice.isChecked()) onoff = 1;
-                                else onoff = 0;
-
-                                if (!deviceSTR.isEmpty() && !divisionSTR.isEmpty() && !deviceCat.equalsIgnoreCase("Choose a device type...") && !divisionCat.equalsIgnoreCase("Choose a division type...")) {
-                                    Toast.makeText(getContext(), "Device created", Toast.LENGTH_SHORT).show();
-                                    device = new Device(deviceSTR, onoff, deviceCat, divisionSTR, divisionCat);
-                                    devices.add(device);
-                                    mCallback.setArrayListDevices(devices);
-                                    dialogInterface.dismiss();
-                                } else {
-                                    Toast.makeText(getContext(), "Device not created", Toast.LENGTH_SHORT).show();
-                                    dialogInterface.dismiss();
-                                }
-                            }
-
-                });
-
-
-
-
-
-                mBuilder.setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int which) {
-                        dialogInterface.dismiss();
-                    }
-                });
-
-
-
-
-                mBuilder.setView(viewDialog);
-                AlertDialog dialog = mBuilder.create();
-                dialog.show();
-                dialog.getButton(DialogInterface.BUTTON_NEGATIVE).setTextColor(Color.RED);
-            }
-        });
-
-        /************************** END Floating Button **************************************************/
-
         return view;
 
     }
+
+
 
     public void showDevicesListFragment(int rID)
     {
@@ -241,6 +177,8 @@ public class DevicesFragment extends Fragment  {
         fc.replaceFragment(fr);
 
     }
+
+
 
     @Override
     public void onAttach(Context context) {
@@ -255,5 +193,9 @@ public class DevicesFragment extends Fragment  {
                     + " must implement DataCommunication");
         }
     }
+
+
+
+
 
 }

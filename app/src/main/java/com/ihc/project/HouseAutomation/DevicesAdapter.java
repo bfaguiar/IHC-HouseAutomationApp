@@ -79,6 +79,9 @@ public class DevicesAdapter extends RecyclerView.Adapter<DevicesAdapter.MyViewHo
 
     }
 
+
+
+
     @Override
     public int getItemCount() {
         return devicesList.size();

@@ -1772,6 +1772,10 @@
         "source": "C:\\Users\\Bruno\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\2881ba0b75d76a604b43223e6fdd7f2b\\res\\layout\\notification_media_action.xml"
     },
     {
+        "merged": "C:\\Users\\Bruno\\AndroidStudioProjects\\HouseAutomation\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_change_device_info.xml.flat",
+        "source": "C:\\Users\\Bruno\\AndroidStudioProjects\\HouseAutomation\\app\\src\\main\\res\\layout\\dialog_change_device_info.xml"
+    },
+    {
         "merged": "C:\\Users\\Bruno\\AndroidStudioProjects\\HouseAutomation\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_in.xml.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c361088aaf40962330b3b82ab6086b99\\res\\anim\\design_snackbar_in.xml"
     },

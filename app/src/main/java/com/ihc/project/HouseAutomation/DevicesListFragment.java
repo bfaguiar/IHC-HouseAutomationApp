@@ -2,13 +2,19 @@ package com.ihc.project.HouseAutomation;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.Movie;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
@@ -21,14 +27,20 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.ihc.project.HouseAutomation.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 
 /**
@@ -41,6 +53,18 @@ public class DevicesListFragment extends Fragment implements RecyclerItemTouchHe
     private DevicesAdapter mAdapter;
     private RelativeLayout relativeLayout;
     private int buttonR_ID;
+    private SwipeRefreshLayout swipe;
+
+    EditText SETnameDevice, SETnameDivision;
+
+    FloatingActionButton addDevice;
+    EditText nameDevice;
+    EditText nameDivision;
+    Switch   switchOnOffDevice;
+    Spinner  spTipoDevice;
+    Spinner  spTipoDivision;
+    Device   device;
+    static ArrayList<Device> devices = new ArrayList<>();
 
     DataCommunicationHome mCallback;
 
@@ -67,12 +91,108 @@ public class DevicesListFragment extends Fragment implements RecyclerItemTouchHe
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         relativeLayout = (RelativeLayout) view.findViewById(R.id.relative_layout);
         deviceList = new ArrayList<>();
-
         mAdapter = new DevicesAdapter(getContext(), deviceList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
+        swipe = view.findViewById(R.id.swiperefresh);
+
+        swipe.setColorSchemeResources(R.color.colorAccent, R.color.darkGrey);
+
+        swipe.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refresh();
+            }
+        });
+
+
+
+        // adding item touch helper
+        // only ItemTouchHelper.LEFT added to detect Right to Left swipe
+        // if you want both Right -> Left and Left -> Right
+        // add pass ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT as param
+        ItemTouchHelper.SimpleCallback itemTouchHelperCallback = new RecyclerItemTouchHelper(0, ItemTouchHelper.LEFT,this );
+        new ItemTouchHelper(itemTouchHelperCallback).attachToRecyclerView(recyclerView);
+
+        prepareDeviceData();
+
+        /************************** FLOATING BUTTON **************************************************/
+
+        addDevice = view.findViewById(R.id.add_device_buttom);
+        addDevice.setOnClickListener( new Button.OnClickListener() {
+            @Override public void onClick(View view) {
+
+                AlertDialog.Builder mBuilder = new AlertDialog.Builder(getContext());
+                final View viewDialog   = getLayoutInflater().inflate(R.layout.dialog_add_device, null);
+
+                nameDevice        = (EditText) viewDialog.findViewById(R.id.name_device);
+                switchOnOffDevice = (Switch)   viewDialog.findViewById(R.id.switch_dialog);
+                nameDivision      = (EditText) viewDialog.findViewById(R.id.name_division);
+                //###########################  Spinner categorias devices #######################################
+                spTipoDevice      = (Spinner) viewDialog.findViewById(R.id.spinnerTipoDevice);
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.device_cat_items));
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spTipoDevice.setAdapter(adapter);
+
+                //###########################  Spinner categorias Divisions #######################################
+                spTipoDivision      = (Spinner) viewDialog.findViewById(R.id.spinnerDivisao);
+                ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.divisions_cat_items));
+                adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spTipoDivision.setAdapter(adapter2);
+
+                // ################################## BUTTONS ########################################################
+
+                mBuilder.setPositiveButton("CREATE", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+
+                        String deviceSTR = nameDevice.getText().toString();
+                        String divisionSTR = nameDivision.getText().toString();
+                        String deviceCat = spTipoDevice.getSelectedItem().toString();
+                        String divisionCat = spTipoDivision.getSelectedItem().toString();
+
+                        int onoff;
+                        if (switchOnOffDevice.isChecked()) onoff = 1;
+                        else onoff = 0;
+
+                        if (!deviceSTR.isEmpty() && !divisionSTR.isEmpty() && !deviceCat.equalsIgnoreCase("Choose a device type...") && !divisionCat.equalsIgnoreCase("Choose a division type...")) {
+                            Toast.makeText(getContext(), "Device created", Toast.LENGTH_SHORT).show();
+                            device = new Device(deviceSTR, onoff, deviceCat, divisionSTR, divisionCat);
+                            devices.add(device);
+                            mCallback.setArrayListDevices(devices);
+                            dialogInterface.dismiss();
+                        } else {
+                            Toast.makeText(getContext(), "Device not created", Toast.LENGTH_SHORT).show();
+                            dialogInterface.dismiss();
+                        }
+                    }
+
+                });
+
+
+
+
+
+                mBuilder.setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+                        dialogInterface.dismiss();
+                    }
+                });
+
+
+
+
+                mBuilder.setView(viewDialog);
+                AlertDialog dialog = mBuilder.create();
+                dialog.show();
+                dialog.getButton(DialogInterface.BUTTON_NEGATIVE).setTextColor(Color.RED);
+            }
+        });
+
+        /************************** END Floating Button **************************************************/
 
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getContext(), recyclerView, new RecyclerTouchListener.ClickListener() {
             @Override
@@ -89,25 +209,74 @@ public class DevicesListFragment extends Fragment implements RecyclerItemTouchHe
 
 
             @Override
-            public void onLongClick(View view, int position) {
+            public void onLongClick(View view, final int position) {
 
+
+                AlertDialog.Builder mBuilder = new AlertDialog.Builder(getContext());
+                final View viewDialog   = getLayoutInflater().inflate(R.layout.dialog_change_device_info, null);
+
+                 SETnameDevice        = (EditText) viewDialog.findViewById(R.id.name_device_change);
+                 SETnameDivision      = (EditText) viewDialog.findViewById(R.id.name_division_change);
+
+
+                mBuilder.setPositiveButton("CHANGE", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+
+
+
+                        String deviceSTR = SETnameDevice.getText().toString();
+                        String divisionSTR = SETnameDivision.getText().toString();
+
+
+                        if (!deviceSTR.isEmpty()) {
+                            deviceList.get(position).setNameDevice(deviceSTR);
+                            mCallback.setArrayListDevices(devices);
+                            mAdapter.notifyDataSetChanged();
+                            Toast.makeText(getContext(), "Device changed", Toast.LENGTH_SHORT).show();
+                            dialogInterface.dismiss();
+                        }
+                        if(!divisionSTR.isEmpty()) {
+                            deviceList.get(position).setNameDivision(divisionSTR);
+                            mCallback.setArrayListDevices(devices);
+                            mAdapter.notifyDataSetChanged();
+                            Toast.makeText(getContext(), "Device changed", Toast.LENGTH_SHORT).show();
+                            dialogInterface.dismiss();
+                        }
+                    }
+
+                });
+
+                mBuilder.setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+                        dialogInterface.dismiss();
+                    }
+                });
+
+
+
+
+                mBuilder.setView(viewDialog);
+                AlertDialog dialog = mBuilder.create();
+                dialog.show();
+                dialog.getButton(DialogInterface.BUTTON_NEGATIVE).setTextColor(Color.RED);
             }
         }));
 
 
-        // adding item touch helper
-        // only ItemTouchHelper.LEFT added to detect Right to Left swipe
-        // if you want both Right -> Left and Left -> Right
-        // add pass ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT as param
-        ItemTouchHelper.SimpleCallback itemTouchHelperCallback = new RecyclerItemTouchHelper(0, ItemTouchHelper.LEFT,this );
-        new ItemTouchHelper(itemTouchHelperCallback).attachToRecyclerView(recyclerView);
-
-        prepareDeviceData();
         return view;
 
     }
 
     private void prepareDeviceData() {
+
+        if (deviceList.size() > 0) {
+            for (int i = 0; i < deviceList.size(); i++) {
+                deviceList.remove(i);
+                mAdapter.notifyItemRemoved(i);
+            }
+        }
 
         ArrayList<Device> devicesAuxiliar = new ArrayList<Device>();
 
@@ -169,6 +338,26 @@ public class DevicesListFragment extends Fragment implements RecyclerItemTouchHe
 
     }
 
+    public void refresh() {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (deviceList.size() > 0) {
+                    for (int i = 0; i < deviceList.size(); i++) {
+                        deviceList.remove(i);
+                        mAdapter.notifyItemRemoved(i);
+                    }
+                }
+                prepareDeviceData();
+                swipe.setRefreshing(false);
+                //ola.
+                // ola2
+                // ola 3
+                // ola 4.
+            }
+        }, 1000);
+    }
+
     /**
      * callback when recycler view is swiped
      * item will be removed on swiped
@@ -226,6 +415,17 @@ public class DevicesListFragment extends Fragment implements RecyclerItemTouchHe
             throw new ClassCastException(context.toString()
                     + " must implement DataCommunication");
         }
+    }
+
+    public void showDevicesListFragment(int rID)
+    {
+        mCallback.setIDButtonDevices(rID);
+
+        Fragment fr = new DevicesListFragment();
+
+        FragmentChangeListener fc=(FragmentChangeListener)getActivity();
+        fc.replaceFragment(fr);
+
     }
 
 
