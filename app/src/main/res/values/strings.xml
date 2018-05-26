@@ -18,7 +18,7 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Goto GitHub Project</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="HouseStats">House stats</string>
@@ -26,6 +26,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Modes">Mood</string>
+
+    <string name="my_cart">My Cart</string>
+    <string name="delete">DELETE</string>
 
     <string name="device_cat"></string>
     <string-array name="device_cat_items">
@@ -36,7 +39,7 @@
         <item>Air Conditioner</item>
         <item>Security Cameras</item>
         <item>Thermostat</item>
-        <item>Smart Door</item>
+        <item>Electronics</item>
         <item>Appliances</item>
     </string-array>
 
@@ -48,7 +51,19 @@
         <item>Hall</item>
         <item>Dinner Room</item>
         <item>Cave</item>
+        <item>WC</item>
     </string-array>
+
+
+    <string name="smart_plugin_str">Smart Plugin</string>
+    <string name="smoke_detector_str">Smoke Detector</string>
+    <string name="lights_str">Light</string>
+    <string name="air_conditioners_str">Air Conditioner</string>
+    <string name="security_cameras_str">Security Cameras</string>
+    <string name="thermostats_str">Thermostat</string>
+    <string name="Electronics_st_r">Electronics</string>
+    <string name="appliances_st_r">Appliances</string>
+    <string name="WeatherText">Weather</string>
 
 
 </resources>

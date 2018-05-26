@@ -19,59 +19,29 @@
             android:id="@+id/HouseStats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             android:text="@string/HouseStats"
             android:textColor="#333333"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/card"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="80dp"
             android:layout_gravity="center"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="16dp"
-            card_view:cardCornerRadius="4dp">
+            card_view:cardCornerRadius="8dp">
 
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginBottom="127dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="7dp"
-                    android:background="@android:color/darker_gray"
-                    card_view:layout_constraintBottom_toBottomOf="parent"
-                    card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintStart_toStartOf="parent"
-                    card_view:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.0" />
-
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guidelineVertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.0" />
 
                 <android.support.constraint.Guideline
                     android:id="@+id/guidelineVertical2"
@@ -82,25 +52,6 @@
                     app:layout_constraintGuide_percent="0.23" />
 
 
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guidelin3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.16" />
-
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.35"
-                    card_view:layout_constraintGuide_end="130dp" />
-
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
@@ -108,15 +59,13 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
                     android:text="House average temperature"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    card_view:layout_constraintBottom_toTopOf="@+id/guidelin3"
+                    card_view:layout_constraintBottom_toTopOf="@+id/guideline15"
                     card_view:layout_constraintEnd_toEndOf="parent"
                     card_view:layout_constraintHorizontal_bias="0.05"
-                    card_view:layout_constraintStart_toStartOf="@+id/guidelineVertical2"
-                    card_view:layout_constraintTop_toTopOf="@+id/guideline" />
+                    card_view:layout_constraintStart_toStartOf="@+id/guidelineVertical2" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -127,13 +76,13 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:text="21ªC"
-                    android:textSize="16sp"
-                    card_view:layout_constraintBottom_toTopOf="@+id/guideline2"
+                    android:textSize="20sp"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
                     card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintHorizontal_bias="0.02"
+                    card_view:layout_constraintHorizontal_bias="0.016"
                     card_view:layout_constraintStart_toStartOf="@+id/guidelineVertical2"
-                    card_view:layout_constraintTop_toTopOf="@+id/guidelin3"
-                    card_view:layout_constraintVertical_bias="0.48000002" />
+                    card_view:layout_constraintTop_toTopOf="@+id/guideline15"
+                    card_view:layout_constraintVertical_bias="1.0" />
 
                 <ImageView
                     android:id="@+id/imageView7"
@@ -143,14 +92,54 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:src="@drawable/temperatura"
-                    card_view:layout_constraintBottom_toTopOf="@+id/guideline2"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
                     card_view:layout_constraintEnd_toStartOf="@+id/guidelineVertical2"
                     card_view:layout_constraintStart_toStartOf="parent"
-                    card_view:layout_constraintTop_toTopOf="@+id/guideline" />
+                    card_view:layout_constraintTop_toTopOf="parent"
+                                                                                    />
+
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="46dp" />
 
             </android.support.constraint.ConstraintLayout>
 
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_graph"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            card_view:cardCornerRadius="8dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:text="House Average Weekly Consumption"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph_plot"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="8dp"
+                android:layout_marginRight="12dp"/>
 
         </android.support.v7.widget.CardView>
 
@@ -160,12 +149,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:text="Moods and Quick Settings"
+            android:layout_marginTop="20dp"
+            android:text="Moods"
+            android:textColor="#333333"
+
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card2"
+            android:id="@+id/card_moods"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_gravity="center"
@@ -180,35 +172,35 @@
 
                 <RadioGroup
                     android:id="@+id/radiogroup"
-                    android:layout_width="match_parent"
+                    android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="8dp"
-                    android:checkedButton="@+id/off">
+                    android:checked="false">
 
                     <RadioButton
                         android:id="@+id/party"
-                        android:layout_width="wrap_content"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Party" />
 
                     <RadioButton
-                        android:id="@+id/custom"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/night_mode"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Custom" />
+                        android:text="Night" />
 
                     <RadioButton
                         android:id="@+id/economic"
-                        android:layout_width="wrap_content"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Economic" />
 
                     <RadioButton
                         android:id="@+id/off"
-                        android:layout_width="wrap_content"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Off" />
@@ -218,6 +210,289 @@
 
         </android.support.v7.widget.CardView>
 
+        <TextView
+            android:id="@+id/WeatherTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Weather"
+            android:textColor="#333333"
+
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_weather"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="16º"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5" />
+
+                <TextView
+                    android:id="@+id/semana_dia5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="Mon"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="@+id/semana_dia4" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                    app:layout_constraintStart_toEndOf="@+id/semana_dia4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="12ªC"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/semana_dia4" />
+
+                <TextView
+                    android:id="@+id/semana_dia4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="9dp"
+                    android:text="Sunday"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView5"
+                    app:layout_constraintEnd_toStartOf="@+id/view2"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                    app:layout_constraintStart_toEndOf="@+id/semana_dia3"
+                    app:layout_constraintTop_toTopOf="@+id/semana_dia3" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="21ªC"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/semana_dia3" />
+
+                <TextView
+                    android:id="@+id/semana_dia3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="7dp"
+                    android:text="Saturday"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView4"
+                    app:layout_constraintEnd_toStartOf="@+id/view"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+                <TextView
+                    android:id="@+id/semana_dia2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="17dp"
+                    android:text="Friday"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView"
+                    app:layout_constraintEnd_toStartOf="@+id/view3"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@+id/view3" />
+
+                <TextView
+                    android:id="@+id/city_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Aveiro, "
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/semana_dia"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/semana_dia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Thursday"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView6"
+                    app:layout_constraintStart_toEndOf="@+id/city_id"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="1dp"
+                    android:src="@drawable/rain"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintEnd_toStartOf="@+id/semana_dia"
+                    app:layout_constraintStart_toStartOf="@+id/city_id"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:text="16"
+                    android:textSize="45sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ºC"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView6"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Precepitation: 80%"
+                    app:layout_constraintBottom_toTopOf="@+id/textView9"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="Humidity: 84%"
+                    app:layout_constraintBottom_toTopOf="@+id/textView10"
+                    app:layout_constraintStart_toStartOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wind: 10 km/h"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="13dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                    app:layout_constraintStart_toEndOf="@+id/semana_dia2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="1dp"
+                    android:src="@drawable/sun"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                    app:layout_constraintEnd_toStartOf="@+id/semana_dia2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/semana_dia2" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="26ªC"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/semana_dia2" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="13dp"
+                    android:src="@drawable/sunny_clouds"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintEnd_toStartOf="@+id/semana_dia3"
+                    app:layout_constraintStart_toEndOf="@+id/view3"
+                    app:layout_constraintTop_toTopOf="@+id/semana_dia3" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/lightning"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                    app:layout_constraintEnd_toStartOf="@+id/semana_dia4"
+                    app:layout_constraintStart_toEndOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="@+id/semana_dia4" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/rain"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/semana_dia5"
+                    app:layout_constraintStart_toEndOf="@+id/view2"
+                    app:layout_constraintTop_toTopOf="@+id/semana_dia5" />
+
+
+            </android.support.constraint.ConstraintLayout>
+            
+
+
+        </android.support.v7.widget.CardView>
+
+        <!--
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/card3"
             android:layout_width="match_parent"
@@ -277,8 +552,10 @@
 
         </android.support.v7.widget.CardView>
 
+        -->
+
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card4"
+            android:id="@+id/card3"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_gravity="center"
@@ -287,20 +564,17 @@
             android:layout_marginTop="16dp"
             card_view:cardCornerRadius="10dp">
 
-        </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card5"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="16dp"
-            card_view:cardCornerRadius="10dp">
 
+
+            </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
 
     </LinearLayout>
 

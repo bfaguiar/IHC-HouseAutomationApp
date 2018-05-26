@@ -7,7 +7,9 @@ INJECTED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\
 MERGED from [com.android.support:design:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c361088aaf40962330b3b82ab6086b99\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d54ddee39d1961b761beab879df86971\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ece094dcd6e31730979d70ccd669dc21\AndroidManifest.xml:2:1-11:12
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\7c1d056e4ebabd268741fd50b9791455\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\0fa60b1589040d14e72644691e6ccb48\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\a8f7e704fe4f3687c5333b34022b7600\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\7941b4c37925926ab675330cd8c4538c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\be395307861b74a034ccb97586d34d32\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\e6647a1ef9282b41d6cd8d9832053808\AndroidManifest.xml:17:1-22:12
@@ -18,6 +20,7 @@ MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Bruno\
 MERGED from [com.android.support:transition:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\84151f4795852b97093ad254c0dc4382\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\2881ba0b75d76a604b43223e6fdd7f2b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\03bd13e6c35220e022f3b3f47b44577f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\f8a103938747795ef42a3fd5962301f5\AndroidManifest.xml:2:1-11:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4b6de16ab96658d4c9aa0804b473e705\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\4c667f16d46eb7fa6ab914a94aa3f5ec\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cf3b9e53324f6cda29536167b568383d\AndroidManifest.xml:17:1-22:12
@@ -53,6 +56,12 @@ application
 ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:11:5-41:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ece094dcd6e31730979d70ccd669dc21\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ece094dcd6e31730979d70ccd669dc21\AndroidManifest.xml:9:5-20
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\7c1d056e4ebabd268741fd50b9791455\AndroidManifest.xml:11:5-12:19
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\7c1d056e4ebabd268741fd50b9791455\AndroidManifest.xml:11:5-12:19
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\a8f7e704fe4f3687c5333b34022b7600\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\a8f7e704fe4f3687c5333b34022b7600\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\f8a103938747795ef42a3fd5962301f5\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\f8a103938747795ef42a3fd5962301f5\AndroidManifest.xml:9:5-20
 	android:supportsRtl
 		ADDED from C:\Users\Bruno\AndroidStudioProjects\HouseAutomation\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
@@ -117,8 +126,12 @@ MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Bruno\.gradle\cac
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d54ddee39d1961b761beab879df86971\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ece094dcd6e31730979d70ccd669dc21\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ece094dcd6e31730979d70ccd669dc21\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\7c1d056e4ebabd268741fd50b9791455\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\7c1d056e4ebabd268741fd50b9791455\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\0fa60b1589040d14e72644691e6ccb48\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\0fa60b1589040d14e72644691e6ccb48\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\a8f7e704fe4f3687c5333b34022b7600\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\a8f7e704fe4f3687c5333b34022b7600\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\7941b4c37925926ab675330cd8c4538c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\7941b4c37925926ab675330cd8c4538c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\be395307861b74a034ccb97586d34d32\AndroidManifest.xml:20:5-44
@@ -139,6 +152,8 @@ MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Bruno\.gr
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\2881ba0b75d76a604b43223e6fdd7f2b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\03bd13e6c35220e022f3b3f47b44577f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\03bd13e6c35220e022f3b3f47b44577f\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\f8a103938747795ef42a3fd5962301f5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\f8a103938747795ef42a3fd5962301f5\AndroidManifest.xml:5:5-7:41
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4b6de16ab96658d4c9aa0804b473e705\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4b6de16ab96658d4c9aa0804b473e705\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\4c667f16d46eb7fa6ab914a94aa3f5ec\AndroidManifest.xml:20:5-44

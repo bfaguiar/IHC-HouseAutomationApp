@@ -1,6 +1,12 @@
 package com.ihc.project.HouseAutomation;
 
-public class Device {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import java.util.ArrayList;
+import java.util.Objects;
+
+public class Device implements Parcelable {
 
     private String nameDevice;
     private int onOff;
@@ -56,4 +62,56 @@ public class Device {
     public void setDivisionType(String divisionType) {
         this.divisionType = divisionType;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Device device = (Device) o;
+        return onOff == device.onOff &&
+                Objects.equals(nameDevice, device.nameDevice) &&
+                Objects.equals(deviceType, device.deviceType) &&
+                Objects.equals(nameDivision, device.nameDivision) &&
+                Objects.equals(divisionType, device.divisionType);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nameDevice, onOff, deviceType, nameDivision, divisionType);
+    }
+
+    protected Device(Parcel in) {
+        nameDevice = in.readString();
+        onOff = in.readInt();
+        deviceType = in.readString();
+        nameDivision = in.readString();
+        divisionType = in.readString();
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(nameDevice);
+        dest.writeInt(onOff);
+        dest.writeString(deviceType);
+        dest.writeString(nameDivision);
+        dest.writeString(divisionType);
+    }
+
+    @SuppressWarnings("unused")
+    public static final Parcelable.Creator<Device> CREATOR = new Parcelable.Creator<Device>() {
+        @Override
+        public Device createFromParcel(Parcel in) {
+            return new Device(in);
+        }
+
+        @Override
+        public Device[] newArray(int size) {
+            return new Device[size];
+        }
+    };
 }
