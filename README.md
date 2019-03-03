@@ -1,7 +1,9 @@
 # HouseAutomationApp
 
 
-![alt text](https://i.imgur.com/km1EN4s.png | width=200)
+![alt text](https://i.imgur.com/km1EN4s.png)
+
+<img src="https://i.imgur.com/km1EN4s.png" width="48">
 
 
 ![alt text](https://i.imgur.com/ZHqmnvw.png)
