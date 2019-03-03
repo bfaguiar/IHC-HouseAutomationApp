@@ -1,7 +1,7 @@
 # HouseAutomationApp
 
 
-<img src="https://i.imgur.com/km1EN4s.png" width="200" eight="500">
+<img src="https://i.imgur.com/km1EN4s.png" width="500" eight="500">
 
 
 ![alt text](https://i.imgur.com/ZHqmnvw.png)
