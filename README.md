@@ -1,6 +1,6 @@
 # HouseAutomationApp
 
-
+Interface mockup module for smart houses, developed by Bruno Aguiar (brunoaguiar@ua.pt) and Cristiano Santos (
 <img src="https://i.imgur.com/km1EN4s.png" width="500" eight="500">
 
 
